@@ -1,0 +1,235 @@
+body {
+  background-color: #16528e;
+}
+.padded {
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/*Creation Page*/
+#top {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 60px;
+}
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+}
+#title {
+  resize: none;
+  margin-bottom: 20px;
+}
+.header {
+  resize: none;
+  margin-bottom: 20px;
+}
+.paragraphs {
+  margin-bottom: 20px;
+}
+.images {
+  margin-bottom: 40px;
+  resize: none;
+}
+.container {
+  display: inline;
+}
+button {
+  background-color: #16528e;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+}
+#sectionButton {
+  top: 50px;
+  left: 20px;
+}
+#createButton {
+  top: 50px;
+  right: 20px;
+}
+#removeButton {
+  top: 120px;
+  left: 20px;
+}
+#Color {
+  position: absolute;
+  top: 110px;
+  right: 50px;
+}
+#colorOptions {
+  position: absolute;
+  top: 150px;
+  right: 60px;
+}
+#Border {
+  position: absolute;
+  top: 170px;
+  right: 60px;
+}
+#borderOptions {
+  position: absolute;
+  top: 210px;
+  right: 60px;
+}
+/*Displaying the posts out*/
+#listofPosts {
+  display: flex;
+  flex-flow: row nowrap;
+  width: auto;
+  height: 100%;
+}
+.postContainer {
+  margin-top: -10px;
+  margin-left: -8px;
+  width: 300px;
+  height: 700px;
+  transition: width 0.5s;
+}
+.postContainer:hover {
+  width: 400px;
+}
+.postTitle {
+  color: #fff;
+  font-weight: bold;
+  font-size: 400%;
+  text-align: center;
+}
+.clickHere {
+  color: #fff;
+  text-align: center;
+}
+/*Post itself*/
+.paraImgContainer {
+  display: flex;
+}
+#currentPostTitle {
+  color: #fff;
+  text-align: center;
+}
+.currentPostHeader {
+  text-align: left;
+}
+/*The Nav Bar*/
+#navBar {
+  position: relative;
+  top: -10px;
+  left: -10px;
+  width: 105%;
+  height: 45px;
+  background: #f2f3f5;
+}
+.icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+#home {
+  top: 2px;
+  left: 2px;
+}
+#write {
+  top: 4px;
+  left: 60px;
+}
+.icon:hover {
+  background-color: #16528e;
+}
+/*Abstract Classes*/
+.hidden {
+  display: none;
+}
+/*Colors*/
+.darkRedBg {
+  background-color: #500;
+}
+.lightRedBg {
+  background-color: #d46a6a;
+}
+.darkBlueBg {
+  background-color: #261758;
+}
+.lightBlueBg {
+  background-color: #887caf;
+}
+.darkPurpleBg {
+  background-color: #370037;
+}
+.lightPurpleBg {
+  background-color: #a66fa6;
+}
+.darkOrangeBg {
+  background-color: #fa7100;
+}
+.lightOrangeBg {
+  background-color: #ffb679;
+}
+.darkGreenBg {
+  background-color: #040;
+}
+.lightGreenBg {
+  background-color: #8c8;
+}
+.darkYellowBg {
+  background-color: #808015;
+}
+.lightYellowBg {
+  background-color: #ffa;
+}
+/*Borders*/
+.noBorder {
+  border-style: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.dotted {
+  border-style: dotted;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.dashed {
+  border-style: dashed;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.solid {
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.double {
+  border-style: double;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.groove {
+  border-style: groove;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.ridge {
+  border-style: ridge;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.inset {
+  border-style: inset;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.outset {
+  border-style: outset;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.right {
+  flex-flow: row-reverse nowrap;
+}

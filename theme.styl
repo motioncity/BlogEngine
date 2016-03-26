@@ -1,0 +1,298 @@
+
+body
+{
+  background-color:rgb(22,82,142);
+}
+
+.padded{
+padding:10px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*Creation Page*/
+
+#top
+{
+  text-align:center;
+  color:white;
+  position:relative;
+  top:60px;
+}
+
+textarea
+{
+   display:block;
+  margin-left:auto;
+  margin-right:auto;
+   border-radius:10px;
+   text-align:center;
+   position:relative;
+   top:60px;
+}
+
+#title
+{
+  resize:none;
+  margin-bottom:20px;
+}
+
+.header
+{
+  resize:none;
+  margin-bottom:20px;
+}
+
+.paragraphs
+{
+  margin-bottom:20px;
+}
+
+.images
+{
+  margin-bottom:40px;
+  resize:none;
+}
+
+
+.container
+{
+  display:inline;
+}
+
+button
+{
+  background-color:rgb(22,82,142);
+  color:white;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  font-weight:bold;
+  font-size:15px;
+  position:absolute;
+}
+
+#sectionButton
+{
+   top:50px;
+  left:20px;
+}
+
+#createButton{
+  top:50px;
+  right:20px;
+}
+#removeButton
+{
+  top:120px;
+  left:20px;  
+}
+
+#Color
+{
+  position:absolute;
+  top:110px;
+  right:50px;
+}
+#colorOptions
+{
+  position:absolute;
+  top:150px;
+  right:60px;
+}
+#Border
+{
+  position:absolute;
+  top:170px;
+  right:60px;
+}
+#borderOptions
+{
+  position:absolute;
+  top:210px;
+  right:60px;
+}
+/*Displaying the posts out*/
+
+
+
+#listofPosts{
+display:flex;
+flex-flow:row nowrap;
+width:auto;
+height:100%
+}
+
+.postContainer{
+  //float:left;
+  margin-top:-10px;
+  margin-left:-8px;
+  width:300px;
+  height:700px;
+ transition:width 0.5s;
+}
+
+.postContainer:hover{
+  width:400px;
+}
+
+.postTitle{
+  color:white;
+  font-weight:bold
+  font-size: 400%;
+  text-align:center;
+}
+
+.clickHere
+{
+  color:white;
+  text-align:center;
+}
+
+/*Post itself*/
+.paraImgContainer
+{
+display:flex;  
+}
+
+
+#currentPostTitle
+{
+  color:white;
+  text-align:center;
+}
+
+.currentPostHeader
+{
+text-align:left
+}
+
+.currentPostPara
+{
+}
+
+/*The Nav Bar*/
+#navBar
+{
+  position:relative;
+  top:-10px;
+  left:-10px;
+  width: 105%;
+	height: 45px;
+	background: rgb(242,243,245);
+}
+
+.icon{
+  position:absolute;
+  width:40px;
+  height:40px;
+  
+}
+#home{
+  top:2px;
+  left:2px;
+}
+#write
+{
+  top:4px;
+  left:60px;
+}
+.icon:hover{
+   background-color: rgb(22,82,142);
+
+ 
+
+}
+/*Abstract Classes*/
+
+.hidden
+{
+  display:none;
+}
+
+/*Colors*/
+
+.darkRedBg
+  background-color:rgb(85,0,0)
+  
+.lightRedBg
+  background-color:rgb(212,106,106)
+  
+ .darkBlueBg
+  background-color:rgb(38,23,88)
+  
+.lightBlueBg
+  background-color:rgb(136,124,175)
+  
+ .darkPurpleBg
+  background-color:rgb(55,0,55)
+  
+.lightPurpleBg
+  background-color:rgb(166,111,166)
+  
+.darkOrangeBg
+  background-color:rgb(250,113,0)
+  
+.lightOrangeBg
+  background-color:rgb(255,182,121)
+  
+ .darkGreenBg
+  background-color:rgb(0,68,0)
+  
+.lightGreenBg
+  background-color:rgb(136,204,136)
+  
+ .darkYellowBg
+  background-color:rgb(128,128,21)
+  
+.lightYellowBg
+  background-color:rgb(255,255,170)
+  
+ /*Borders*/
+ 
+.noBorder
+  border-style: none;
+  border-radius:10px;
+  margin-bottom:30px;
+  
+.dotted
+  border-style: dotted;
+  border-radius:10px;
+  margin-bottom:30px;
+  
+.dashed
+  border-style: dashed;
+  border-radius:10px;
+  margin-bottom:30px;
+  
+.solid
+  border-style: solid;
+  border-radius:10px;
+  margin-bottom:30px;
+
+.double
+  border-style:double;
+  border-radius:10px;
+  margin-bottom:30px;
+
+.groove
+  border-style:groove;
+  border-radius:10px;
+  margin-bottom:30px;
+  
+.ridge
+  border-style:ridge;
+  border-radius:10px;
+  margin-bottom:30px;
+
+.inset
+  border-style:inset;
+  border-radius:10px;
+  margin-bottom:30px;
+  
+ .outset
+   border-style:outset;
+   border-radius:10px;
+   margin-bottom:30px;
+   
+.right 
+  flex-flow:row-reverse nowrap; 
+  

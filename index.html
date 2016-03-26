@@ -1,0 +1,93 @@
+<html>
+    <head>
+    <link href = "theme.css?123" rel = "stylesheet">
+    <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+    </head>
+    <body onload = "displayPosts()">
+<div id = "navBar">
+  <div id="navBG">
+  </div>
+  <img class = "icon" id ="home"src ="http://i.imgur.com/gTnflII.png" >
+  </img>
+<img class = "icon" id="write" src = "http://i.imgur.com/Nufyd2i.png"
+     </img>
+</div>
+<div id = "currentPost">
+</div>
+
+<div id = "create" class = "hidden" >
+<h1 id="top"> Create a Post! </h1>
+  <textarea  placeholder="
+  Place Blog Title in Here" id="title" rows="2" cols="30">
+</textarea>
+<textarea  placeholder="
+  Place Text for Header in here" class="header" rows="3" cols="30">
+</textarea>
+  <textarea placeholder = "Place text for paragraph in here" class="paragraphs" rows="5" cols="55">
+</textarea>
+  
+  <div class="container">
+    <textarea placeholder = "Place image url in here" class="images" rows="3" cols="55">
+</textarea>
+    <p class = "orientation">
+      Image Orientation &nbsp
+      </p>
+    <select class="choices">
+      <option value="left">Left
+      </option>
+      <option value="right">Right
+      </option>
+    </select>
+  </div>
+  
+  <p id="Color"> Color Scheme</p>
+<select id = "colorOptions" onchange="handleColor()">
+   <option value="Red">Red
+      </option>
+    <option value="Blue">Blue
+      </option>
+   <option value="Purple">Purple
+      </option>
+    <option value="Orange">Orange
+      </option>
+   <option value="Green">Green
+      </option>
+    <option value="Yellow">Yellow
+      </option>
+  </select>
+  
+    <p id="Border"> Border Style</p>
+<select id = "borderOptions" onchange="handleBorder()">
+   <option value="noBorder" class ="noBorder">No Border
+      </option>
+    <option value="dotted" class="dotted">
+      Dotted Border
+      </option>
+   <option value="dashed" class = "dashed">Dashed Border
+      </option>
+    <option value="solid" class ="solid">Solid Border
+      </option>
+   <option value="double" class = "double">Double Border
+      </option>
+    <option value="groove" class = "groove">Groove Border
+      </option>
+  <option value="ridge" class = "ridge">Ridge Border
+      </option>
+  <option value="inset" class = "inset">Inset Border
+      </option>
+  <option value="outset" class = "outset">Outset Border
+      </option>
+  </select>
+  
+<button id ="sectionButton" > Add More Sections </button>
+<button id ="createButton"> Create Your Post </button>
+<button id ="removeButton"> Remove Section </button>
+</div>
+
+<div id="listofPosts">
+</div>
+
+
+</body>
+    <script src = "script.js"></script>
+</html>
